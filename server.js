@@ -6,8 +6,15 @@ const server = express();
 server.use(helmet());
 server.use(express.json());
 
+//Welcome
+server.get("/", (req, res, next) => {
+   res.json({
+      message: "Welcome to node-db4-challenge"
+   });
+});
+
 server.use("/api/recipes", recipeRouter);
-server.get("/api/ingredients/:id/recipes", (req, res, next) => {});
+// server.get("/api/ingredients/:id/recipes", (req, res, next) => {});
 
 //404 Page not found
 server.use((req, res, next) => {
