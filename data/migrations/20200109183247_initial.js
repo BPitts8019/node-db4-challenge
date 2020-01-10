@@ -7,7 +7,6 @@ exports.up = async (knex) => {
    await knex.schema.createTable(RECIPES, table => {
       table.increments("id");
       table.string("name")
-         .unique()
          .notNullable();
    });
 
@@ -49,8 +48,7 @@ exports.up = async (knex) => {
          .references("id").inTable(INGREDIENTS)
          .onDelete("CASCADE")
          .onUpdate("CASCADE");
-      table.integer("quantity")
-         .unsigned()
+      table.decimal("quantity", 4)
          .notNullable();
       table.string("measure")
          .notNullable();
