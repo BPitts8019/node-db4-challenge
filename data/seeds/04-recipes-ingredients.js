@@ -5,7 +5,7 @@ exports.seed = async (knex) => {
       {recipe_id: 1, ingredient_id: 5, quantity: 2, measure: "cloves"},
       {recipe_id: 1, ingredient_id: 6, quantity: 1, measure: "lb"},
       {recipe_id: 1, ingredient_id: 9, quantity: 0.5, measure: "lb"},
-      {recipe_id: 1, ingredient_id: 9, quantity: 0.5, measure: "lb"},
+      {recipe_id: 1, ingredient_id: 14, quantity: 48, measure: "oz"},
       {recipe_id: 2, ingredient_id: 13, quantity: 3, measure: "Tbsp"},
       {recipe_id: 2, ingredient_id: 7, quantity: 1, measure: "medium"},
       {recipe_id: 2, ingredient_id: 5, quantity: 3, measure: "cloves"},
