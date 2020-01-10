@@ -3,7 +3,7 @@ exports.seed = async (knex) => {
       {name: "Chicken Broth"},
       {name: "Tomato Paste"},
       {name: "Flour"},
-      {name: "Bread Slice"},
+      {name: "Bread"},
       {name: "Garlic"},
       {name: "Ground Beef"},
       {name: "Onion"},
